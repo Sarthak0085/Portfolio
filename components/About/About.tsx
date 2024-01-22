@@ -7,7 +7,7 @@ const About = () => {
   return (
       <div className='bg-[#121121] pt-[4rem] pb-[4rem] md:pt-[4rem]'>
            <h1 className='heading pb-[4rem]'>About <span className='text-orange-400'>Me</span></h1>
-          <div className='grid grid-cols-1 lg:grid-cols-2 w-[80%] mx-auto gap-[3rem] lg:justify-start justify-center items-center'>
+          <div data-aos="fade-right" data-aos-delay="300" className='grid grid-cols-1 lg:grid-cols-2 w-[80%] mx-auto gap-[3rem] lg:justify-start justify-center items-center'>
               <div className='flex items-center mx-auto lg:mx-0 justify-center lg:justify-start flex-col'>
                   <h2 className='text-[25px] md:text-[35px] lg:text-[45px] leading-[2rem] md:leading-[3rem] capitalize 
                   mb-[3rem] font-bold text-white'>
@@ -34,7 +34,7 @@ const About = () => {
                       </button>
                   </div>
               </div>
-              <div className='mx-auto lg:h-[500px] lg:w-[500px] md:h-[400px] md:w-[400px] lg:mx-0 mt-[2rem] lg:mt-0 w-[300px] h-[300px] relative'>
+              <div data-aos="fade-left" data-aos-delay="300" className='mx-auto lg:h-[500px] lg:w-[500px] md:h-[400px] md:w-[400px] lg:mx-0 mt-[2rem] lg:mt-0 w-[300px] h-[300px] relative'>
                   <Image
                       src="/images/about.jpg"
                       alt="users"

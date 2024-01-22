@@ -12,6 +12,7 @@ type Props = {
 const page: React.FC<Props> = ({ params }) => {
     const title = params.title;
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const searchParams = useSearchParams();
     const image = searchParams.get("image");
     const description = searchParams.get("description");

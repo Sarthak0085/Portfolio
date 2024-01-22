@@ -8,11 +8,12 @@ interface ProjectProps {
     description: string;
     LiveLink?: string;
     githubLink?: string;
+    delay?: string;
 }
 
-const ProjectCard: React.FC<ProjectProps> = ({ title, src, description }) => {
+const ProjectCard: React.FC<ProjectProps> = ({ title, src, description, delay }) => {
     return (
-        <Link href={`/project/${title}?image=${src}&description=${description}`} className='border cursor-pointer border-slate-500  hover:scale-110 transition-all duration-200'>
+        <Link data-aos="fadeUpIn" data-aos-delay={delay} href={`/project/${title}?image=${src}&description=${description}`} className='border cursor-pointer border-slate-500  hover:scale-110 transition-all duration-200'>
             <div className='relative w-[100%]
                   h-[200px] md:h-[300px]'>
                 <Image

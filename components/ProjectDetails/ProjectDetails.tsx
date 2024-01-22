@@ -16,7 +16,7 @@ const ProjectDetails:React.FC<ProjectDetailsProps> = ({title, image, description
     <div className='bg-[#121121] pt-[4rem] pb-[4rem] md:pt-[6rem]'>
            <h1 className='heading !capitalize pb-[4rem] md:pb-[2rem]'>Project<span className='text-orange-400 pl-2'>{title}</span></h1>
               <div className='grid grid-cols-1 lg:grid-cols-2 w-[80%] mx-auto gap-[3rem] justify-center items-center'>
-                  <div className=' w-full lg:border-r-2  border-[#55e6a5] flex items-center justify-center lg:justify-start'>
+                  <div data-aos="fade-right" data-aos-delay="500" className=' w-full lg:border-r-2  border-[#55e6a5] flex items-center justify-center lg:justify-start'>
                       <div className='lg:h-[500px] lg:w-[95%] md:pr-[1rem] md:w-[80%] mt-[2rem] lg:mt-0 w-[90%] h-auto relative'>
                   <Image
                       src={image !== null ? image : "/profile.jpg"}
@@ -27,7 +27,7 @@ const ProjectDetails:React.FC<ProjectDetailsProps> = ({title, image, description
                       />
                       </div>
                   </div>
-              <div className='flex items-center mx-auto lg:pl-[1rem] lg:mx-0 justify-center lg:justify-start flex-col'>
+              <div  data-aos="fade-left" data-aos-delay="500" className='flex items-center mx-auto lg:pl-[1rem] lg:mx-0 justify-center lg:justify-start flex-col'>
                   <div className='mb-[3rem] flex justify-center lg:justify-start items-center md:space-x-10'>
                   <p className='text-[20px] text-slate-300 w-[90%]'>
                       {description !==null && description}

@@ -1,6 +1,7 @@
 "use client";
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
@@ -10,16 +11,22 @@ const ContactForm = () => {
  
     const form = useRef();
     
-    const onSubmit =async (e) => {
+    const onSubmit = async (e) => {
         e.preventDefault();
-        console.log(name, email, message, phoneNumber);
+        console.log(e,name, email, message, phoneNumber);
         
         emailjs.sendForm('service_rrjfi5q', 'template_f2a774j', form.current, 'el09ySEBlKxplT3io')
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
+        console.log('SUCCESS!', response.status, response.text);
+        toast.success("Form Submitted Successfully");
     }, function(error) {
-       console.log('FAILED...', error);
-        });
+        console.log('FAILED...', error);
+        toast.error("Error while submitting the form. Please use the another method");
+    });
+               setName("");
+        setEmail("");
+        setPhoneNumber("");
+        setMessage("");
     }
 
   return (
@@ -74,6 +81,11 @@ const ContactForm = () => {
               className='mt-8 font-medium inline-block capitalize text-xl py-3 px-8 border-2 border-[#55e6a5] 
               rounded-md cursor-pointer hover:bg-[#55e6a5] text-white'
           />
+          <div className="mx-[1rem] flex items-center pb-6 pt-8" aria-hidden="true">
+    <div className="flex-grow border-t border-gray-100" />
+    <span className="mx-2 mt-[-2px] uppercase flex-shrink text-lg text-[#55e6a5]">or</span>
+    <div className="flex-grow border-t border-gray-100" />
+  </div>
     </form>
   )
 }
