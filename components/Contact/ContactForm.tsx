@@ -9,20 +9,23 @@ const ContactForm = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [message, setMessage] = useState('');
  
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null)
     
-    const onSubmit = async (e) => {
+    const onSubmit = async (e:  React.FormEvent) => {
         e.preventDefault();
-        console.log(e,name, email, message, phoneNumber);
+        console.log(e, name, email, message, phoneNumber);
         
+        if (form.current) {
         emailjs.sendForm('service_rrjfi5q', 'template_f2a774j', form.current, 'el09ySEBlKxplT3io')
-    .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        toast.success("Form Submitted Successfully");
-    }, function(error) {
-        console.log('FAILED...', error);
-        toast.error("Error while submitting the form. Please use the another method");
-    });
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                toast.success("Form Submitted Successfully");
+            }, function(error) {
+                console.log('FAILED...', error);
+                toast.error("Error while submitting the form. Please use another method");
+            });
+         }
+
                setName("");
         setEmail("");
         setPhoneNumber("");
