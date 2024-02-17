@@ -10,7 +10,7 @@ const Projects = () => {
         <ProjectCard
           delay="300"
           title='Portfolio'
-          src='/images/myportfolio.png'
+          src='/images/projects/myportfolio.png'
           githubLink='https://github.com/Sarthak0085/Portfolio'
           LiveLink='https://portfolio-black-one-68.vercel.app/'
           description="Portfolio project is made using Next.js, Tailwind CSS, and AOT animation libraries for a dynamic and visually
@@ -20,7 +20,7 @@ const Projects = () => {
         <ProjectCard
           delay="300"
           title='CinéCraze'
-          src='/images/cinecraze.png'
+          src='/images/projects/cinecraze.png'
           githubLink='https://github.com/Sarthak0085/Movie-frontend'
           githubbackendLink='https://github.com/Sarthak0085/Movie-server'
           LiveLink='https://movie-frontend-six-rho.vercel.app/'
@@ -34,7 +34,7 @@ const Projects = () => {
         <ProjectCard
           delay="300"
           title='MERN-Bot'
-          src='/images/mern-bot.png'
+          src='/images/projects/mern-bot.png'
           githubLink='https://github.com/Sarthak0085/mern-bot-client'
           githubbackendLink = 'https://github.com/Sarthak0085/Mern-Bot'
           LiveLink='https://mern-bot-client.vercel.app/'
@@ -49,7 +49,7 @@ const Projects = () => {
         <ProjectCard
           delay="300"
           title='ShopCraze'
-          src='/images/shopcraze.png'
+          src='/images/projects/shopcraze.png'
           description="Utilized RTK Query for seamless data fetching and management, enhancing user experience by ensuring
               efficient and responsive interactions.
               Implemented multivendor functionality to enable multiple sellers to list and manage their products,
