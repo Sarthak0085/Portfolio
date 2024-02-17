@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, src, description, delay, g
                         : <Link href={`${githubLink}`} className='flex gap-2  items-center justify-center border p-2 rounded-md border-blue-500 text-[#55e6a5] '>
                                Github <FaGithub />
                         </Link>
-                        : <></>
+                        : <p className='flex items-center col-span-12 justify-center text-[#f0b666] '> Currently Working....</p>
                 }
                 {
                             githubbackendLink &&

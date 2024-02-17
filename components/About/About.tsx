@@ -8,13 +8,13 @@ const About = () => {
   return (
       <div className='bg-[#121121] pt-[4rem] pb-[4rem] md:pt-[4rem]'>
            <h1 className='heading pb-[4rem]'>About <span className='text-orange-400'>Me</span></h1>
-          <div data-aos="fade-right" data-aos-delay="300" className='grid grid-cols-1 lg:grid-cols-2 w-[80%] mx-auto gap-[3rem] lg:justify-start justify-center items-center'>
-              <div className='flex items-center mx-auto lg:mx-0 justify-center lg:justify-start flex-col'>
-                  <h2 className='text-[25px] md:text-[35px] lg:text-[45px] leading-[2rem] md:leading-[3rem] capitalize 
+          <div data-aos="fade-right" data-aos-delay="300" className='grid grid-cols-1 1150:grid-cols-2 w-[80%] mx-auto gap-[3rem] lg:justify-start justify-center items-center'>
+              <div className='flex items-center mx-auto 1150:mx-0 justify-center 1150:justify-start flex-col'>
+                  <h2 className='text-[25px] md:text-[35px] 1150:text-[45px] leading-[2rem] md:leading-[3rem] capitalize 
                   mb-[3rem] font-bold text-white'>
                       Transforming <span className='text-orange-400'>Vision</span>
                   </h2>
-                  <div className='mb-[3rem] flex justify-center lg:justify-start items-center md:space-x-10'>
+                  <div className='mb-[3rem] flex justify-center 1150:justify-start items-center md:space-x-10'>
                   <span className='w-[100px] hidden md:block bg-gray-400 h-[5px] rounded-md'></span>
                   <p className='text-[20px] text-slate-300 w-[80%]'>
                         I&apos;m a self-taught coder with a background in textiles, now deeply passionate about coding.
@@ -40,7 +40,7 @@ const About = () => {
                           </a>
                   </div>
               </div>
-              <div data-aos="fade-left" data-aos-delay="300" className='mx-auto lg:h-[500px] lg:w-[500px] md:h-[400px] md:w-[400px] lg:mx-0 mt-[2rem] lg:mt-0 w-[300px] h-[300px] relative'>
+              <div data-aos="fade-left" data-aos-delay="300" className='mx-auto 1150:h-[500px] 1150:w-[500px] md:h-[400px] md:w-[400px] 1150:mx-0 mt-[2rem] 1150:mt-0 w-[300px] h-[300px] relative'>
                   <Image
                       src="/images/about.jpg"
                       alt="users"

@@ -10,7 +10,7 @@ const Hero = () => {
   return (
       <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-center bg-cover">
           <Particle />
-          <div className='w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center'>
+          <div className='w-[80%] 1150:w-[90%] grid-cols-1 mx-auto grid 1150:grid-cols-2 gap-[3rem] h-[100%] items-center'>
               <div>
                   <h1 className='text-[35px] md:text-[50px] text-white font-bold'>
                     Hello, I&apos;M
@@ -18,7 +18,7 @@ const Hero = () => {
                  </h1>
                   <TextAnimation />
                   <p className='text-[20px] mt-[2rem] text-[#ffffff92]'>
-                      I&apos;m a fresh MERN stack developer and web enthusiast, eager to learn and create exciting web projects.
+                      I&apos;m a fresher MERN stack developer and web enthusiast, eager to learn and create exciting web projects.
                       Passionate about coding and exploring new technologies, I strive to build user-friendly and efficient web
                       applications. Excited to contribute to the ever-evolving world of web development.
                   </p>
@@ -38,7 +38,7 @@ const Hero = () => {
                           </a>
                   </div>
               </div>
-              <div className='w-[500px] h-[500px] shadow-2xl shadow-orange-500 hidden relative lg:flex items-center rounded-full bg-[#55e6a5]'>
+              <div className='w-[500px] h-[500px] shadow-2xl shadow-orange-500 hidden relative 1150:flex items-center rounded-full bg-[#55e6a5]'>
                   <Image
                       src="/images/u1.jpg"
                       alt="users"
