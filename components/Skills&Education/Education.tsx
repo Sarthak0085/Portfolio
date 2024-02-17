@@ -12,7 +12,7 @@ interface Props{
 const Education:React.FC<Props> = ({title, year, cgpa, percentage, description, delay}) => {
     return (
       <div data-aos="fadeInUp" data-aos-delay={delay} >
-            <div className='border-[2px] p-[2rem] hover:scale-105 hover:-rotate-6 mb-[2rem]'>
+            <div className='border-[2px] p-[2rem] mb-[2rem]'>
 
           <span className='px-[2rem] text-[#55e6a5] py-[1rem] font-bold text-[18px] border-[2px] border-[#55e6a5]'>
               {year}

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { FiDownload } from 'react-icons/fi'
@@ -16,22 +17,27 @@ const About = () => {
                   <div className='mb-[3rem] flex justify-center lg:justify-start items-center md:space-x-10'>
                   <span className='w-[100px] hidden md:block bg-gray-400 h-[5px] rounded-md'></span>
                   <p className='text-[20px] text-slate-300 w-[80%]'>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum veritatis officiis minima sunt reprehenderit
-                      atque aspernatur culpa laudantium
-                      nulla, eligendi quod eveniet? Dolorem maxime quidem, quas reprehenderit maiores obcaecati repudiandae!
+                        I&apos;m a self-taught coder with a background in textiles, now deeply passionate about coding.
+                        From textiles to coding, I&apos;ve embraced learning new skills with enthusiasm.
+                        I love the challenge of coding and enjoy creating solutions that make a difference. Now, I want to apply
+                        my learning skills into the real world and dive deeper into technology, seeking to make meaningful
+                        contributions and continually expand my knowledge.
                   </p>
                   </div>
                   <div className='space-y-6 mt-[2rem] flex-col sm:space-y-0 sm:space-x-6 sm:flex sm:flex-row sm:items-center'>
-                      <button className='px-[2rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
-                              flex items-center text-black bg-blue-300 space-x-2'>
-                          <p >Download CV</p>
+                      <a href='images/Sarthak_Resume.pdf'
+                          download="Sarthak_Resume.pdf"
+                          target='_blank'
+                          className='px-[2rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
+                              flex  text-black bg-blue-200 space-x-2'>
+                           Download CV
                           <FiDownload className="h-[1.7rem] w-[1.6rem] text-black" />
-                      </button>
-                      <button className='px-[2rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
-                              flex items-center text-black bg-blue-300 space-x-2 w-[230px] justify-center'>
-                          <FaGithub className="h-[1.7rem] w-[1.6rem] text-black" />
-                          <p >Github</p>
-                      </button>
+                      </a>
+                      <a href={'https://github.com/Sarthak0085/'} target='_blank' className='px-[2rem] gap-2 hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
+                              flex text-black bg-blue-200 w-[230px] justify-center'>
+                              <FaGithub className="h-[1.5rem] w-[1.6rem] text-black" />
+                              Github
+                          </a>
                   </div>
               </div>
               <div data-aos="fade-left" data-aos-delay="300" className='mx-auto lg:h-[500px] lg:w-[500px] md:h-[400px] md:w-[400px] lg:mx-0 mt-[2rem] lg:mt-0 w-[300px] h-[300px] relative'>

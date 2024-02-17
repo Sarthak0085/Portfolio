@@ -12,7 +12,7 @@ const Skills = () => {
               <h2 className='text-blue-500 md:text-[3rem] text-[2rem] text-center'>Education</h2>
               <div className='w-[80%] mx-auto pt-[2rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center'>
                 <Education delay="200" title='Matriculation' year='2015-2017' description='I passed my matriculation from Vivekanand High School, Pathankot' percentage={90}/>
-                <Education delay="400" title='Matriculation' year='2017-2019' description='I passed my 12th from Government Senior Secondary High School, Pathankot' percentage={89.5}/>
+                <Education delay="400" title='Intermediate' year='2017-2019' description='I passed my 12th from Government Senior Secondary High School, Pathankot' percentage={89.5}/>
                 <Education delay="600" title='B.tech' year='2019-2023' description='I passed my 12th from Government Senior Secondary High School, Jalandhar' cgpa={7.71}/>
               </div>
       </div>
@@ -28,6 +28,7 @@ const Skills = () => {
                   <SkillsItem delay='1200' skill='Express Js' />
                   <SkillsItem delay='1400' skill='MONGODB' />
                   <SkillsItem delay='1600' skill='Next js' />
+                  <SkillsItem delay='1600' skill='Typescript' />
               </div>
           </div>
     </div>
