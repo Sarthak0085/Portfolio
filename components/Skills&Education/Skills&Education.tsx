@@ -1,10 +1,11 @@
 import React from 'react'
 import Education from './Education'
 import SkillsItem from './SkillsItem'
+import Heading from '@/utils/heading'
 
 const Skills = () => {
   return (
-      <div className='pt-[4rem] md:pt-[6rem] pb-[5rem] bg-[#09101a]'>
+    <div id='skills' className='pt-[4rem] md:pt-[6rem] pb-[5rem] bg-[#09101a]'>
           <h1 className='heading'>
               Education & <span className='text-orange-400'>Skills</span>
           </h1>

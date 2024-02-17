@@ -1,12 +1,13 @@
+import Heading from '@/utils/heading'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-      <div className='bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[4rem]'>
+    <div id='projects' className='bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[4rem]'>
           <h1 className='heading'>
               Pro<span className='text-orange-400'>ject</span>
           </h1>
-          <div className='w-[90%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]'>
+          <div className='w-[90%] 500:w-[70%] md:w-[90%] pt-[2rem] mx-auto grid grid-cols-1 sm:w-[60%] md:grid-cols-2 lg:grid-cols-3 gap-[2rem]'>
         <ProjectCard
           delay="300"
           title='Portfolio'
@@ -19,7 +20,7 @@ const Projects = () => {
         />
         <ProjectCard
           delay="300"
-          title='CinéCraze'
+          title='CineCraze'
           src='/images/projects/cinecraze.png'
           githubLink='https://github.com/Sarthak0085/Movie-frontend'
           githubbackendLink='https://github.com/Sarthak0085/Movie-server'

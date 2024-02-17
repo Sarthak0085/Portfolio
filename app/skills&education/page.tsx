@@ -3,8 +3,8 @@ import Heading from '@/utils/heading';
 
 const page = () => {
   return (
-      <div className='overflow-x-hidden'>
-          <Heading 
+    <div className='overflow-x-hidden'>
+      <Heading 
         title='Education&Skills'
         description="This page shows the details of the Person Education and Skills"
         keywords='Nextjs, particles, react, Contact , Web Development, Programming'

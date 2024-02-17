@@ -16,9 +16,15 @@ const page: React.FC<Props> = ({ params }) => {
     const searchParams = useSearchParams();
     const image = searchParams.get("image");
     const description = searchParams.get("description");
-    console.log(image);
+    const github = searchParams.get("github");
+    const githubBackend = searchParams.get("backend");
+    const live = searchParams.get("live");
+  //   console.log(image, github, githubBackend, live);
     
-    console.log(title);
+  // console.log(title);
+  
+  // console.log(!!github, !!githubBackend);
+  
     
     return (
       <div className='overflow-x-hidden'>
@@ -28,7 +34,14 @@ const page: React.FC<Props> = ({ params }) => {
         keywords='Nextjs, particles, react, '
             />
       <div className='h-full mt-[3.5rem] overflow-y-hidden'>
-          <ProjectDetails title={title} image={image} description={description} />
+          <ProjectDetails
+            title={title}
+            image={image}
+            description={description}
+            githubLink={github}
+            liveLink={live}
+            githubBackendLink={githubBackend}
+          />
       </div>
     </div>
   )

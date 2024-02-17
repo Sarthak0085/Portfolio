@@ -1,3 +1,4 @@
+import Heading from '@/utils/heading'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -6,7 +7,7 @@ import { FiDownload } from 'react-icons/fi'
 
 const About = () => {
   return (
-      <div className='bg-[#121121] pt-[4rem] pb-[4rem] md:pt-[4rem]'>
+      <div id='about' className='bg-[#121121] pt-[4rem] pb-[4rem] md:pt-[4rem]'>
            <h1 className='heading pb-[4rem]'>About <span className='text-orange-400'>Me</span></h1>
           <div data-aos="fade-right" data-aos-delay="300" className='grid grid-cols-1 1150:grid-cols-2 w-[80%] 1150:w-[90%] mx-auto gap-[3rem] lg:justify-start justify-center items-center'>
               <div className='flex items-center mx-auto 1150:mx-0 justify-center 1150:justify-start flex-col'>

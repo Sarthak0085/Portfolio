@@ -17,6 +17,14 @@ body {
     @apply font-semibold relative mb-[2rem] text-white cursor-pointer text-[27px] md:block w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
   }
 
+    .active {
+      @apply text-[17px] text-orange-500
+    }
+
+        .active-mobile {
+          @apply text-[27px] text-orange-500
+        }
+
   .heading {
     @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase
   }

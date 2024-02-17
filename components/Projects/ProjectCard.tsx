@@ -16,7 +16,12 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = ({ title, src, description, delay, githubLink, LiveLink, githubbackendLink }) => {
     return (
-        <Link data-aos="fadeUpIn" data-aos-delay={delay} href={`/project/${title}?image=${src}&description=${description}`} className='border cursor-pointer border-slate-500  hover:scale-110 transition-all duration-200'>
+        <Link
+            data-aos="fadeUpIn"
+            data-aos-delay={delay}
+            href={`/project/${title}?image=${src}&description=${description}&${githubLink ? `github=${githubLink}` : ''}&${githubbackendLink ? `backend=${githubbackendLink}` : ''}&${LiveLink ? `live=${LiveLink}` : ''}`}
+            className='border cursor-pointer border-slate-500  hover:scale-110 transition-all duration-200'
+        >
             <div className='relative
                   h-[200px] md:h-[300px]'>
                 <Image
@@ -44,7 +49,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, src, description, delay, g
                 {
                             githubbackendLink &&
                             <Link href={`${githubLink}`} className='flex gap-2 items-center justify-center border p-2 rounded-md border-blue-500 text-[#55e6a5] '>
-                               backend <FaGithub />
+                               Backend <FaGithub />
                         </Link>
                         }
                         {

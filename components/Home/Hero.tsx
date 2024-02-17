@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-      <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-center bg-cover">
+      <div id='home' className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-center bg-cover">
           <Particle />
           <div className='w-[80%] 1150:w-[90%] grid-cols-1 mx-auto grid 1150:grid-cols-2 gap-[3rem] h-[100%] items-center'>
               <div>
