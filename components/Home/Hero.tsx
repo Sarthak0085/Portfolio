@@ -26,9 +26,9 @@ const Hero = () => {
                       <a href='images/Sarthak_Resume.pdf'
                           download="Sarthak_Resume.pdf"
                           target='_blank'
-                          className='px-[2rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
-                              flex  text-black bg-blue-200 space-x-2'>
-                           Download CV
+                          className='px-[1.5rem] gap-2 hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
+                              flex  w-[230px] text-black bg-blue-200 space-x-2'>
+                          Download CV
                           <FiDownload className="h-[1.7rem] w-[1.6rem] text-black" />
                       </a>
                       <a href={'https://github.com/Sarthak0085/'} className='px-[2rem] gap-2 hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold

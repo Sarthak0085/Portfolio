@@ -16,11 +16,41 @@ const MobileNavbar: React.FC<Props> = ({ nav, closeNav }) => {
     return (
         <div className={`fixed transform ${navAnimation} transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[100000] bg-[#09101a]`}>
           <div className='flex flex-col items-center justify-center h-[100vh] w-[100vw]'>
-             <Link href={"/"} className={`nav-link-mobile ${pathname === "/" ? "active-mobile": ""}`}>Home</Link>
-              <Link href={"/about"} className={`nav-link-mobile ${pathname === "/about" ? "active-mobile": ""}`}>About</Link>
-              <Link href={"/skills&education"} className={`nav-link-mobile ${pathname === "/skills&education" ? "active-mobile": ""}`}>Skills</Link>
-              <Link href={"/projects"} className={`nav-link-mobile ${pathname === "/projects" ? "active-mobile": ""}`}>Projects</Link>
-              <Link href={"/contact"} className={`nav-link-mobile ${pathname === "/contact" ? "active-mobile": ""}`}>Contact</Link>
+                <Link
+                    href={"/"}
+                    onClick={closeNav}
+                    className={`nav-link-mobile ${pathname === "/" ? "active-mobile" : ""}`}
+                >
+                    Home
+                </Link>
+                <Link
+                    href={"/about"}
+                    onClick={closeNav}
+                    className={`nav-link-mobile ${pathname === "/about" ? "active-mobile" : ""}`}
+                >
+                    About
+                </Link>
+                <Link
+                    href={"/skills&education"}
+                    onClick={closeNav}
+                    className={`nav-link-mobile ${pathname === "/skills&education" ? "active-mobile" : ""}`}
+                >
+                    Skills
+                </Link>
+                <Link
+                    href={"/projects"}
+                    onClick={closeNav}
+                    className={`nav-link-mobile ${pathname === "/projects" ? "active-mobile" : ""}`}
+                >
+                    Projects
+                </Link>
+                <Link
+                    href={"/contact"}
+                    onClick={closeNav}
+                    className={`nav-link-mobile ${pathname === "/contact" ? "active-mobile" : ""}`}
+                >
+                    Contact
+                </Link>
           </div>
           <div onClick={closeNav}
               className='absolute cursor-pointer top-[2rem] right-[2rem] text-orange-400'

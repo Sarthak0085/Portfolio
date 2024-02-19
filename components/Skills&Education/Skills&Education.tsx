@@ -11,9 +11,9 @@ const Skills = () => {
           </h1>
           <div className='flex flex-col pt-[4rem] md:pt-[6rem] gap-5'>
               <h2 className='text-blue-500 md:text-[3rem] text-[2rem] text-center'>Education</h2>
-              <div className='w-[80%] mx-auto pt-[2rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center'>
+              <div className='w-[80%] mx-auto pt-[2rem] grid grid-cols-1 800:grid-cols-2 gap-[2rem] items-center'>
                 <Education delay="450" title='B.tech' year='2019-2023' description='I passed my B.Tech in Textile Technology from Dr. BR Ambedkar National Institute of Technology, Jalandhar' cgpa={7.71}/>
-                <Education delay="300" title='Intermediate' year='2017-2019' description='I passed my 12th from Government Senior Secondary High School, Pathankot' percentage={89.5}/>
+                <Education delay="300" title='Intermediate' year='2017-2019' description='I passed my 12th in Science Stream from Government Senior Secondary High School (Boys), Pathankot' percentage={89.5}/>
                 <Education delay="150" title='Matriculation' year='2015-2017' description='I passed my matriculation from Vivekanand High School, Pathankot' percentage={90}/>
               </div>
       </div>
