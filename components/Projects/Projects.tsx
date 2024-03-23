@@ -24,7 +24,7 @@ const Projects = () => {
         <ProjectCard
           delay="300"
           title="TrendFlex"
-          src="/images/projects/trendFlex.png"
+          src="/images/projects/TrendFlex.png"
           githubLink="https://github.com/Sarthak0085/Multivendor-frontend"
           githubbackendLink="https://github.com/Sarthak0085/Multivendor-backend"
           LiveLink="https://multivendor-frontend.onrender.com"
