@@ -17,9 +17,30 @@ const Projects = () => {
           src="/images/projects/myportfolio.png"
           githubLink="https://github.com/Sarthak0085/Portfolio"
           LiveLink="https://portfolio-black-one-68.vercel.app/"
-          description="Portfolio project is made using Next.js, Tailwind CSS, and AOT animation libraries for a dynamic and visually
-                         appealing portfolio website and also it is fully responsive.
+          description="Portfolio project is made using Next.js, Tailwind CSS, and AOT animation libraries for a dynamic and visually appealing portfolio website and also it is fully responsive.
           This project showcases all my skills, education, projects and some other details about me."
+        />
+        <ProjectCard
+          delay="300"
+          title="Vortex Vista"
+          src="/images/projects/vortex-vista.png"
+          githubLink="https://github.com/Sarthak0085/blog"
+          LiveLink="https://vortex-vista.vercel.app/"
+          description={`"Vortex Vista" is a blogging platform allowing users to register and login via email, Github and Google and engage with content by viewing, liking, disliking, commenting, added to favourites, saving posts and sharing the posts along with creation of your own blogs.
+          Implementing filterig options for users to easily find blogs by categories, tags, names, authors and dates.
+          Implementing admin for accessing all the blogs and authors and users and able to apply CRUD operations on that and also able to add tags, categories and can change faqs dynamically.
+          `}
+        />
+        <ProjectCard
+          delay="300"
+          title="TaskHub"
+          src="/images/projects/taskhub.png"
+          githubLink="https://github.com/Sarthak0085/TaskHub"
+          LiveLink="https://task-hub-lyart-one.vercel.app"
+          description={`TaskHub is a collaborative task management platform built using the MERN stack. It allows teams to create and manage workspaces, projects, tasks, and subtasks with role-based permissions.
+          Key features include real-time notifications, activity logs, 2FA authentication, avatar uploads via Cloudinary, member management, and workspace-level settings.
+          The app also provides detailed task tracking, filtering, and an intuitive UI powered by ShadCN. Email verification and secure JWT-based auth flow are fully implemented.
+          `}
         />
         <ProjectCard
           delay="300"
@@ -39,6 +60,18 @@ const Projects = () => {
         />
         <ProjectCard
           delay="300"
+          title="MERN Auth"
+          src="/images/projects/mern-auth.png"
+          githubLink="https://github.com/Sarthak0085/MERN-Auth"
+          LiveLink="https://mern-auth-vert.vercel.app/"
+          description={`MERN Auth is a full-stack authentication system built with the MERN stack. It supports user registration, login, email verification, password reset, and token-based JWT authentication using cookies.
+
+          Key flows include secure account activation via email, protected routes, and user feedback through toast notifications. The frontend is built with React and TypeScript using Vite, while the backend uses Express, MongoDB, and Zod for validation.
+          `}
+        />
+
+        <ProjectCard
+          delay="300"
           title="CineCraze"
           src="/images/projects/cinecraze.png"
           githubLink="https://github.com/Sarthak0085/Movie-frontend"
@@ -51,7 +84,7 @@ const Projects = () => {
               Enhanced user experience by implementing sorting options for movies by category, year, language, rating,
               and duration, promoting efficient navigation and content discovery."
         />
-        <ProjectCard
+        {/* <ProjectCard
           delay="300"
           title="MERN-Bot"
           src="/images/projects/mern-bot.png"
@@ -65,7 +98,7 @@ const Projects = () => {
              development efficiency.
              Combined TypeScript with React, Node.js, and Express to create a scalable and reliable application
              architecture, facilitating smoother development workflows and reducing potential runtime errors."
-        />
+        /> */}
       </div>
     </div>
   );

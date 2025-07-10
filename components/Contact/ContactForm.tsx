@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(e, name, email, message, phoneNumber);
+    // console.log(e, name, email, message, phoneNumber);
 
     if (form.current) {
       emailjs

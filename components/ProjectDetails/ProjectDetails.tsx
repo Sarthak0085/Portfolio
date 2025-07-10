@@ -13,12 +13,10 @@ interface ProjectDetailsProps{
     githubBackendLink?: string | null;
 }
 
-const ProjectDetails: React.FC<ProjectDetailsProps> = ({ title, image, description, liveLink, githubLink, githubBackendLink }) => {
-    console.log(liveLink, githubBackendLink, githubLink);
-    
+const ProjectDetails: React.FC<ProjectDetailsProps> = ({ title, image, description, liveLink, githubLink, githubBackendLink }) => {    
   return (
     <div className='bg-[#121121] pt-[4rem] pb-[4rem] md:pt-[6rem]'>
-           <h1 className='heading !capitalize pb-[4rem] md:pb-[2rem]'>Project<span className='text-orange-400 pl-2'>{title}</span></h1>
+           <h1 className='heading !capitalize pb-[4rem] md:pb-[2rem]'>Project ~<span className='text-orange-400 pl-2'>{decodeURI(title)}</span></h1>
               <div className='grid grid-cols-1 lg:grid-cols-2 lg:w-[90%] w-[80%] mx-auto gap-[3rem] justify-center items-center'>
                   <div data-aos="fade-right" data-aos-delay="500" className=' w-full lg:border-r-2  border-[#55e6a5] flex items-center justify-center lg:justify-start'>
                     <div className='lg:h-[500px] lg:w-[95%] md:pr-[1rem] md:w-[80%] mt-[2rem] lg:mt-0 w-[90%] h-auto relative'>
@@ -37,9 +35,9 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ title, image, descripti
                       {description !==null && description}
                   </p>
                   </div>
-                  <div className='mt-[1rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
+                  <div className='mt-[1rem] flex flex-wrap gap-2'>
                       {liveLink  &&
-                          (<Link href={`${liveLink}`} className='px-[2rem] hover:text-orange-400 w-[200px] border border-orange-300 transition-all py-[1rem] duration-200 text-[20px] font-bold
+                          (<Link href={`${liveLink}`} className='px-[2rem] hover:text-orange-400 w-[150px] border border-orange-300 transition-all py-[1rem] duration-200 text-[20px] font-bold
                               flex items-center justify-center text-white space-x-2'>
                               <p >Live</p>
                               <MdArrowOutward className="h-[1.7rem] w-[1.6rem]" />
@@ -48,23 +46,23 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ title, image, descripti
                       {
                          githubLink && !githubBackendLink &&
                              ( <Link href={`${githubLink}`} className='px-[2rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
-                              flex items-center text-black bg-blue-300 space-x-2 w-[200px] justify-center'>
+                              flex items-center text-black bg-blue-300 space-x-2 w-[180px] justify-center'>
                           <FaGithub className="h-[1.7rem] w-[1.6rem] text-black" />
                           <p >Github</p>
                               </Link>)
                       }
                       {
                         githubLink  && githubBackendLink &&
-                          (<Link href={`${githubLink}`} className='px-[2rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
-                              flex items-center text-black bg-blue-300 space-x-2 w-[200px] justify-center'>
+                          (<Link href={`${githubLink}`} className='px-[1rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
+                              flex items-center text-black bg-blue-300 space-x-2 w-[175px] justify-center'>
                           <FaGithub className="h-[1.7rem] w-[1.6rem] text-black" />
                           <p >Frontend</p>
                               </Link> )
                       }
                       {
                           githubBackendLink  &&
-                          (<Link href={`${githubBackendLink}`} className='px-[2rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
-                              flex items-center text-black bg-blue-300 space-x-2 w-[200px] justify-center'>
+                          (<Link href={`${githubBackendLink}`} className='px-[1rem] hover:bg-orange-400 transition-all duration-200 py-[1rem] text-[20px] font-bold
+                              flex items-center text-black bg-blue-300 space-x-2 w-[175px] justify-center'>
                               <FaGithub className="h-[1.7rem] w-[1.6rem] text-black" />
                               <p >Backend</p>
                           </Link>)

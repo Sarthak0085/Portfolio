@@ -10,7 +10,7 @@ type Props = {
 
 
 const page: React.FC<Props> = ({ params }) => {
-    const title = params.title;
+    const title = decodeURIComponent(params.title);
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const searchParams = useSearchParams();
@@ -32,7 +32,7 @@ const page: React.FC<Props> = ({ params }) => {
         title={`${title} Project`}
         description={`This page shows the details of the project: ${title}`} 
         keywords='Nextjs, particles, react, '
-            />
+      />
       <div className='h-full mt-[3.5rem] overflow-y-hidden'>
           <ProjectDetails
             title={title}
